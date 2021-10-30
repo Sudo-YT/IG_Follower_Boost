@@ -42,7 +42,7 @@ if fol == "y":
 if fol == "n":
     session.set_do_follow(True, percentage=0)
 
-session.like_by_tags(["love", "photography", "travel"], amount=4) # Add tags here and when you do add all the tags together and add one to amount
-session.set_dont_like("nsfw")
+session.like_by_tags(["love", "photography", "travel"], amount=4) # Add tags to search here and when you do, add all the tags together and add one to amount
+session.set_dont_like(["nsfw", "sex"]) # Add tags to 100% avoid here
 
 session.end()
