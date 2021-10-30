@@ -30,7 +30,7 @@ print("\033[1;32;40m\n""""{}
 user = input("[+] Enter you username: ")
 pw = getpass.getpass("[+] Enter you user password: ")
 fol = input("[+] Would you like to follow these accounts? (y/n): ")
-follow = input("[+] Enter the max amount of people to want to follow: ")
+follow = input("[+] Enter the max amount of accounts you want to view: ")
 
 session = InstaPy(username=user, password=pw)
 session.login()
