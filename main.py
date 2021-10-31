@@ -52,6 +52,4 @@ if com == "n":
 
 session.like_by_tags([like], amount=2)
 
-session.set_dont_like(["nsfw", "sex"]) # Add tags to 100% avoid here
-
 session.end()
