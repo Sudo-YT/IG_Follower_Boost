@@ -46,7 +46,7 @@ if fol == "n":
 
 if com == "y":
     session.set_do_comment(enabled=True, percentage=100)
-    session.set_comments(["Amazing!", "Nice", "Great stuff"])
+    session.set_comments(["Amazing!", "Nice", "Great stuff"]) # If you want to comment other things just put the words in the list
 if com == "n":
     session.set_do_comment(enabled=False, percentage=0)
 
