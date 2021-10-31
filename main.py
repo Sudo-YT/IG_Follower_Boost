@@ -39,8 +39,6 @@ session.login()
 
 session.set_relationship_bounds(enabled=True, max_followers=int(view))
 
-session.like_by_tags([like], amount=2)
-
 if fol == "y":
     session.set_do_follow(True, percentage=100)
 if fol == "n":
@@ -53,5 +51,7 @@ if com == "n":
     session.set_do_comment(enabled=False, percentage=0)
 
 session.set_dont_like(["1", "2"]) # Add tags to 100% avoid here
+
+session.like_by_tags([like], amount=2)
 
 session.end()
